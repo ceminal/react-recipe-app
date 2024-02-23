@@ -1,6 +1,9 @@
-# Recipe App Setup
+# React Recipe App
 
-Project Setup
+### Project Setup
+To run this project,
 
-1 - npm install
-2 - npm run dev
+```
+npm install
+npm run dev
+```
