@@ -1,4 +1,4 @@
-import "./RecipeCard.css";
+import styles from "./RecipeCard.module.css";
 import PropTypes from "prop-types";
 import { useState } from "react";
 import Recipe from "./Recipe";
@@ -47,18 +47,18 @@ function RecipeCard(props) {
           recipeDetail={detailInfo}
         />
       ) : (
-        <div className="recipe-item">
-          <div className="recipe-front">
-            <div className="recipe-image">
+        <div className={styles.recipeItem}>
+          <div>
+            <div className={styles.recipeImage}>
               <img src={recipeImage} alt="Recipe" />
             </div>
-            <div className="recipe-info">
-              <strong className="recipe-title">{recipeTitle}</strong>
-              <span className="recipe-description">
+            <div className={styles.recipeInfo}>
+              <strong>{recipeTitle}</strong>
+              <span>
                 {iconName && <i className={`bi bi-${iconName}`}></i>}{" "}
                 {recipeDescription}
               </span>
-              <span className="recipe-prepTime">
+              <span>
                 {iconName2 && <i className={`bi bi-${iconName2}`}></i>}{" "}
                 {recipePrepTime}
               </span>

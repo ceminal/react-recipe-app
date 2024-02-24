@@ -1,12 +1,12 @@
 import RecipeCard from "./RecipeCard";
 import { recipeData } from "../recipeData.js";
-import "./RecipeList.css";
+import  styles from "./RecipeList.module.css";
 
 function RecipeList() {
   return (
-    <div className="recipes-wrapper">
+    <div className={styles.recipesWrapper}>
       <h1>Recipe List</h1>
-      <div className="recipes">
+      <div className={styles.recipes}>
         {recipeData.map((recipe) => (
           <RecipeCard
             key={recipe.title}

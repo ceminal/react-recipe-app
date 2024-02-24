@@ -1,4 +1,4 @@
-.recipe-detail {
+.recipeDetail {
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   cursor: pointer;
@@ -10,20 +10,20 @@
   overflow: auto;
 }
 
-.recipe-detail:hover {
+.recipeDetail:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
 }
 
-.recipe-detail::-webkit-scrollbar {
+.recipeDetail::-webkit-scrollbar {
   width: 10px;
 }
 
-.recipe-detail::-webkit-scrollbar-thumb {
+.recipeDetail::-webkit-scrollbar-thumb {
   background-color: #d6d6d6;
   border-radius: 5px;
 }
 
-.recipe-detail::-webkit-scrollbar-thumb:hover {
+.recipeDetail::-webkit-scrollbar-thumb:hover {
   background-color: #b8b8b8;
 }

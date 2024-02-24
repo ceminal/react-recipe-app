@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
-import "./Card.css";
+import styles from "./Card.module.css";
 
 function Card(props) {
   return (
-    <div className="recipe-card">
+    <div className={styles.recipeCard}>
       <span>{props.children}</span>
     </div>
   );

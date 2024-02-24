@@ -1,13 +1,13 @@
 import Card from "./Card";
 import PropTypes from "prop-types";
-import "./Recipe.css";
+import styles from "./Recipe.module.css";
 
 function Recipe(props) {
   const { recipeDetail, detailTitle } = props;
 
   return (
-    <div className="recipe-detail">
-      <strong>{detailTitle}</strong>
+    <div className={styles.recipeDetail}>
+      <strong>{detailTitle}</strong> 
       <Card>{recipeDetail}</Card>
     </div>
   );
